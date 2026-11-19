@@ -194,7 +194,7 @@ movies = [
         "genre": ["Drama"],
         "year": 2007,
         "description": "A teacher helps a young student discover his unique talents.",
-        "poster": "https://image.tmdb.org/t/p/w500/66A9MqXOyVFCibj5w7k68UPEaJP.jpg"
+        "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdoUZNEP93x4JGcyBQQAGFObw3b50bz7hlUPO15N7eRA&s=10"
     },
     {
         "title": "The Pursuit of Happyness",
@@ -202,7 +202,7 @@ movies = [
         "genre": ["Drama"],
         "year": 2006,
         "description": "A father works hard to build a better future for his son.",
-        "poster": "https://image.tmdb.org/t/p/w500/rruAZO7zxqzzlSzgBv672BqW3cW.jpg"
+        "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHNphoNOq4dZejyobrkEo0e-r5ocmRfVSD-Lf4BsgC4g&s=10"
     },
     {
         "title": "Oppenheimer",
@@ -210,7 +210,7 @@ movies = [
         "genre": ["Drama", "Thriller"],
         "year": 2023,
         "description": "A historical drama about the scientist behind the atomic bomb.",
-        "poster": "https://image.tmdb.org/t/p/w500/8Gxv8gSFCU0LGDykEGv7vR1n2Wk.jpg"
+        "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYLqlHeFPRl8BhVEO6oCEDCYsd20RFBDS1Sp2q9f13RQ&s=10"
     },
 
     # ROMANCE
@@ -220,7 +220,7 @@ movies = [
         "genre": ["Romance", "Comedy"],
         "year": 2007,
         "description": "Two strangers meet during a train journey and change each other's lives.",
-        "poster": "https://image.tmdb.org/t/p/w500/mYKkjwwlxXnFf7Wn8G76Bq0M4yC.jpg"
+        "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3DfTtiTjyicXrIrDHCHrUXvcqKOcUZU7lwwViuM9Yzg&s=10"
     },
     {
         "title": "Yeh Jawaani Hai Deewani",
@@ -228,7 +228,7 @@ movies = [
         "genre": ["Romance", "Drama"],
         "year": 2013,
         "description": "Friends reunite and discover how their dreams and relationships have changed.",
-        "poster": "https://image.tmdb.org/t/p/w500/v9Qz75t0G8X1B8M3v0N5Xv8m6z4.jpg"
+        "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5938a6d2UZytAh7C-J1ehqeHMRuOZAqvC8rBmVIhSlg&s=10"
     },
     {
         "title": "The Notebook",
@@ -236,7 +236,7 @@ movies = [
         "genre": ["Romance", "Drama"],
         "year": 2004,
         "description": "A romantic story following a couple through different stages of life.",
-        "poster": "https://image.tmdb.org/t/p/w500/rqqMfm0C3Wgn6kvIVCVOTuNbWqX.jpg"
+        "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYSMoO_FUsEhFeRWCzqBuGHjBWeRkEfYxpQdOOpwFq-g&s=10"
     },
     {
         "title": "La La Land",
@@ -244,7 +244,7 @@ movies = [
         "genre": ["Romance", "Drama", "Musical"],
         "year": 2016,
         "description": "A musician and an aspiring actor pursue their dreams in Los Angeles.",
-        "poster": "https://image.tmdb.org/t/p/w500/uDO8zWDjaWwofdGCOhy5k5LUKWw.jpg"
+        "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrdhxHdfQB9duTt0pYKx8Ni7wbn3y6YFWWhWK3Xpy8Cg&s=10"
     },
 
     # SCI-FI
@@ -254,7 +254,7 @@ movies = [
         "genre": ["Sci-Fi", "Drama", "Adventure"],
         "year": 2014,
         "description": "Explorers travel through space in search of a future for humanity.",
-        "poster": "https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg"
+        "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN6MBU9VxzNxqU0gzzOsgDR0Mpxn4_6BDHIzD-Xc8YaQ&s=10"
     },
     {
         "title": "Inception",
@@ -262,7 +262,7 @@ movies = [
         "genre": ["Sci-Fi", "Action", "Thriller"],
         "year": 2010,
         "description": "A team enters dreams to carry out a complex mission.",
-        "poster": "https://image.tmdb.org/t/p/w500/edv5CZvWj09upOsy2Y6IwDhK8bt.jpg"
+        "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiAES7D3zx7VEgrrbhfr0QES36-cXO_i9777LZ4j73-w&s=10"
     },
     {
         "title": "The Matrix",
@@ -270,7 +270,7 @@ movies = [
         "genre": ["Sci-Fi", "Action"],
         "year": 1999,
         "description": "A computer hacker discovers the surprising truth about reality.",
-        "poster": "https://image.tmdb.org/t/p/w500/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg"
+        "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_MulRy8J1sMA6Fxqcxu-RKLfqyI3EaceA8W0W9_tKIg&s=10"
     },
     {
         "title": "Kalki 2898 AD",
@@ -278,7 +278,7 @@ movies = [
         "genre": ["Sci-Fi", "Action", "Adventure"],
         "year": 2024,
         "description": "A futuristic story inspired by Indian mythology.",
-        "poster": "https://image.tmdb.org/t/p/w500/ombsmhYUqR4qqOLOxAyr5V8hbyv.jpg"
+        "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXGy0JVsyx6-Sji6PxEF2OyIKJ2vzCh3vmH-uZcEGbhw&s=10"
     },
     {
         "title": "Avatar",
@@ -296,7 +296,7 @@ movies = [
         "genre": ["Sports", "Drama"],
         "year": 2007,
         "description": "A hockey coach leads a women's team towards a championship.",
-        "poster": "https://image.tmdb.org/t/p/w500/66A9MqXOyVFCibj5w7k68UPEaJP.jpg"
+        "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTICp10IcLjnCd-oHdgqDnng4eRzJcZTDkpD9n5AcVkOg&s=10"
     },
     {
         "title": "Dangal",
@@ -304,7 +304,7 @@ movies = [
         "genre": ["Sports", "Drama"],
         "year": 2016,
         "description": "A father trains his daughters to become successful wrestlers.",
-        "poster": "https://image.tmdb.org/t/p/w500/jIux7vEgnoIaXm19uqqqE9g1Nl.jpg"
+        "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAxp7zi6TKNvrY48-HC8I4ggfEk5BDRvb7EA0XLbXpuw&s=10"
     },
     {
         "title": "Bhaag Milkha Bhaag",
@@ -312,7 +312,7 @@ movies = [
         "genre": ["Sports", "Drama"],
         "year": 2013,
         "description": "The inspiring life story of Indian athlete Milkha Singh.",
-        "poster": "https://image.tmdb.org/t/p/w500/w1v48L5Xw48b8R8l88WjeWhT7S6.jpg"
+        "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjlzSyMqx9ApyKdPJiJSX6w8yZTZdi-H7UZw2pkNgCcw&s=10"
     },
     {
         "title": "Ford v Ferrari",
@@ -320,7 +320,7 @@ movies = [
         "genre": ["Sports", "Drama"],
         "year": 2019,
         "description": "Engineers and drivers work together to challenge Ferrari at Le Mans.",
-        "poster": "https://image.tmdb.org/t/p/w500/dLvU2AWK03SFGecMn7j1d5jHw58.jpg"
+        "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKV1fA8WxGZiGGGSkgmrmSNGM-t_nknmrQZBTcqDC-ew&s=10"
     },
 
     # THRILLER
@@ -330,7 +330,7 @@ movies = [
         "genre": ["Thriller", "Crime", "Drama"],
         "year": 2022,
         "description": "A family faces new challenges as an old case returns.",
-        "poster": "https://image.tmdb.org/t/p/w500/jIux7vEgnoIaXm19uqqqE9g1Nl.jpg"
+        "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdXMUCJC8cOeZ5WPNuwtKGCmVbpGoEKKelORonL4yzVg&s=10"
     },
     {
         "title": "Talaash",
@@ -338,7 +338,7 @@ movies = [
         "genre": ["Thriller", "Crime", "Mystery"],
         "year": 2012,
         "description": "A police officer investigates a mysterious case.",
-        "poster": "https://image.tmdb.org/t/p/w500/mYKkjwwlxXnFf7Wn8G76Bq0M4yC.jpg"
+        "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3A3a5uZbTrJhzbehK3UFGhYuWJ5eZrL2i4f6Cs4qySg&s"
     },
     {
         "title": "Kahaani",
@@ -346,7 +346,7 @@ movies = [
         "genre": ["Thriller", "Mystery", "Drama"],
         "year": 2012,
         "description": "A woman searches for her missing husband in Kolkata.",
-        "poster": "https://image.tmdb.org/t/p/w500/ombsmhYUqR4qqOLOxAyr5V8hbyv.jpg"
+        "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCeW8fKYIT8oFGthhscEvXbqpiyEkDGFEUgU2zB1PbcA&s=10"
     },
     {
         "title": "Shutter Island",
@@ -354,7 +354,7 @@ movies = [
         "genre": ["Thriller", "Mystery", "Drama"],
         "year": 2010,
         "description": "Two investigators visit a remote island to investigate a disappearance.",
-        "poster": "https://image.tmdb.org/t/p/w500/4GDy0FiInTwkKexurgoVqBPHC1t.jpg"
+        "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTksbkNVk5wwyCP_uyi5ZsRHSHXuM0gIIBZ771UG8VJPA&s=10"
     },
     {
         "title": "Gone Girl",
@@ -362,7 +362,7 @@ movies = [
         "genre": ["Thriller", "Mystery", "Drama"],
         "year": 2014,
         "description": "A disappearance leads to a complicated investigation.",
-        "poster": "https://image.tmdb.org/t/p/w500/qymaqaHMruFYkLwmhWPYn1P2j3Y.jpg"
+        "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ109b64fujAfyfSs7AvrcUtAsrF8GkVyzfCuewGvCbSg&s=10"
     }
 ]
 
