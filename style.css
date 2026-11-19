@@ -1,0 +1,259 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0b0b16;
+    color: white;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+}
+
+/* Navigation bar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+    background: #11111f;
+    border-bottom: 1px solid #25253b;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #a78bfa;
+}
+
+.nav-text {
+    color: #aaa;
+    font-size: 14px;
+}
+
+.back-link {
+    color: #c4b5fd;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Homepage */
+
+.hero {
+    text-align: center;
+    padding: 85px 20px 70px;
+}
+
+.tagline {
+    color: #a78bfa;
+    font-size: 13px;
+    letter-spacing: 4px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 52px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+h1 span {
+    color: #a78bfa;
+}
+
+.subtitle {
+    color: #aaa;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+/* Recommendation form */
+
+.recommend-box {
+    background: #171729;
+    border: 1px solid #30304b;
+    padding: 35px;
+    border-radius: 15px;
+    max-width: 470px;
+    margin: auto;
+    text-align: left;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.recommend-box h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 23px;
+}
+
+label {
+    display: block;
+    margin: 15px 0 10px;
+    color: #d1d1e0;
+    font-size: 14px;
+}
+
+select,
+input {
+    width: 100%;
+    padding: 14px;
+    background: #25253b;
+    color: white;
+    border: 1px solid #41415b;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+}
+
+select:focus,
+input:focus {
+    border-color: #a78bfa;
+}
+
+button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 15px;
+    background: linear-gradient(90deg, #7c3aed, #a78bfa);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px #7c3aed66;
+}
+
+/* Results page */
+
+.results {
+    text-align: center;
+    padding: 65px 8%;
+}
+
+.movie-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 22px;
+    margin: 40px auto;
+    max-width: 1100px;
+    text-align: left;
+}
+
+.movie-card {
+    background: #171729;
+    border: 1px solid #30304b;
+    padding: 25px;
+    border-radius: 13px;
+    transition: 0.3s;
+}
+
+.movie-card:hover {
+    transform: translateY(-7px);
+    border-color: #a78bfa;
+}
+
+.movie-icon {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.movie-card h2 {
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.movie-info {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.movie-info span {
+    background: #30254b;
+    color: #c4b5fd;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.movie-card p {
+    color: #aaa;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.no-results {
+    grid-column: 1 / -1;
+    padding: 40px;
+    background: #171729;
+    border-radius: 12px;
+}
+
+.no-results p {
+    color: #aaa;
+    margin-top: 12px;
+}
+
+.home-button {
+    display: inline-block;
+    background: #7c3aed;
+    color: white;
+    text-decoration: none;
+    padding: 14px 25px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.home-button:hover {
+    background: #9561f5;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #777;
+    font-size: 13px;
+    border-top: 1px solid #25253b;
+}
+
+/* Mobile screens */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 20px;
+    }
+
+    .nav-text {
+        display: none;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .hero {
+        padding-top: 55px;
+    }
+
+    .recommend-box {
+        padding: 25px 20px;
+    }
+
+    .results {
+        padding: 45px 20px;
+    }
+}

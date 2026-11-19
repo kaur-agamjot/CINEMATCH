@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineMatch | My Watchlist</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">🎬 CineMatch</div>
+    <div style="display: flex; gap: 20px; align-items: center;">
+        <a href="/" class="nav-link" style="color: #c4b5fd; text-decoration: none;">Home</a>
+    </div>
+</header>
+
+<section style="padding: 50px 8%; max-width: 1200px; margin: auto;">
+    <div style="text-align: center; margin-bottom: 40px;">
+        <p class="tagline">YOUR PERSONAL LIBRARY</p>
+        <h1>My Watchlist & <span>Watched Movies</span></h1>
+    </div>
+
+    <div id="watchlist-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 25px;">
+        <!-- Populated via JavaScript -->
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 CineMatch | Discover. Explore. Enjoy.</p>
+</footer>
+
+<script>
+const allMovies = [
+    {% for m in movies %}
+    {
+        title: "{{ m.title }}",
+        industry: "{{ m.industry }}",
+        genre: {{ m.genre | tojson }},
+        year: {{ m.year }},
+        description: "{{ m.description }}",
+        poster: "{{ m.poster }}"
+    },
+    {% endfor %}
+];
+
+function renderWatchlist() {
+    let watchlist = JSON.parse(localStorage.getItem("cinematch_watchlist") || "[]");
+    let watched = JSON.parse(localStorage.getItem("cinematch_watched") || "[]");
+    let container = document.getElementById("watchlist-container");
+    container.innerHTML = "";
+
+    let savedMovies = allMovies.filter(m => watchlist.includes(m.title) || watched.includes(m.title));
+
+    if (savedMovies.length === 0) {
+        container.innerHTML = `
+            <div style="grid-column: 1 / -1; text-align: center; padding: 40px; background: #171729; border-radius: 12px; border: 1px solid #30304b;">
+                <h2>Your watchlist is empty!</h2>
+                <p style="color: #aaa; margin: 15px 0;">Explore movies and click 'Add to Watchlist' or 'Already Watched' to save them here.</p>
+                <a href="/" style="display: inline-block; background: #7c3aed; color: white; padding: 12px 25px; border-radius: 6px; text-decoration: none; font-weight: bold;">Explore Movies</a>
+            </div>
+        `;
+        return;
+    }
+
+    savedMovies.forEach(movie => {
+        let isWatched = watched.includes(movie.title);
+        let statusBadge = isWatched ? '<span style="background: #4f46e5; color: white; padding: 4px 10px; border-radius: 20px; font-size: 11px;">Watched</span>' : '<span style="background: #059669; color: white; padding: 4px 10px; border-radius: 20px; font-size: 11px;">Watchlist</span>';
+
+        let card = document.createElement("div");
+        card.className = "movie-card";
+        card.style.cssText = "background: #171729; border: 1px solid #30304b; border-radius: 12px; overflow: hidden; display: flex; flex-direction: column;";
+        
+        card.innerHTML = `
+            <div style="height: 380px; background: #000;">
+                <img src="${movie.poster}" alt="${movie.title}" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.src='https://placehold.co/400x600/211c3c/c9a7ff?text=Movie+Poster'">
+            </div>
+            <div style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
+                <div style="display: flex; gap: 8px; margin-bottom: 10px;">
+                    <span style="background: #30254b; color: #c4b5fd; padding: 4px 10px; border-radius: 20px; font-size: 11px;">${movie.industry}</span>
+                    ${statusBadge}
+                </div>
+                <h2 style="font-size: 20px; margin-bottom: 8px;">${movie.title}</h2>
+                <p style="color: #a78bfa; font-size: 13px; margin-bottom: 12px;">${movie.genre.join(', ')} | ${movie.year}</p>
+                <p style="color: #aaa; font-size: 13px; line-height: 1.5; flex-grow: 1; margin-bottom: 15px;">${movie.description}</p>
+                <button onclick="removeItem('${movie.title}')" style="width: 100%; padding: 10px; background: #dc2626; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: bold;">Remove</button>
+            </div>
+        `;
+        container.appendChild(card);
+    });
+}
+
+function removeItem(title) {
+    let watchlist = JSON.parse(localStorage.getItem("cinematch_watchlist") || "[]");
+    let watched = JSON.parse(localStorage.getItem("cinematch_watched") || "[]");
+
+    watchlist = watchlist.filter(t => t !== title);
+    watched = watched.filter(t => t !== title);
+
+    localStorage.setItem("cinematch_watchlist", JSON.stringify(watchlist));
+    localStorage.setItem("cinematch_watched", JSON.stringify(watched));
+    renderWatchlist();
+}
+
+document.addEventListener("DOMContentLoaded", renderWatchlist);
+</script>
+
+</body>
+</html>
